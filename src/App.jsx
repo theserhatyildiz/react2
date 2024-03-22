@@ -7,17 +7,9 @@ function App() {
   let [showProduct,setShowProduct] = useState(true);
 
   return (
-    <>
-      <h1>UseEffect Demo</h1>
-
-      <button onClick={()=>{
-        setShowProduct(true);
-      }}>Show</button>
-      
-      <button onClick={()=>{
-        setShowProduct(false)
-      }}>Hide</button>
-
+    <div className='main'>
+   
+      <h1>All Products</h1>
       {
         showProduct==true?
         (
@@ -30,7 +22,7 @@ function App() {
 
     
 
-    </>
+    </div>
   )
 }
 
